@@ -22,12 +22,14 @@ var found = 0;
 
 function init()
 {
+    //main
+    query("body").innerHTML = '<header><h1>Memóriajáték</h1></header><main></main><footer><p>Rohovszky Ákos</p></footer>';
     //making options
-    query("body").innerHTML += '<div id="options"></div>';
+    query("main").innerHTML += '<div id="options"></div>';
     query("#options").innerHTML += '<div id="card_num"><p>Card amount: </p></div>';
     query("#options").innerHTML += '<div id="speed"><p>Speed settings: </p></div>';
     //making field
-    query("body").innerHTML += '<div id="cards"></div>';
+    query("main").innerHTML += '<div id="cards"></div>';
     //generating buttons
     speed_options.forEach(speed => {
         query("#speed").innerHTML += `<button onclick="set_speed(${speed})">${speed/1000} sec</button>`;

@@ -2,6 +2,21 @@
     box-sizing: border-box;
 }
 
+header, main, footer {
+    padding: 5px;
+    border: solid 1px black;
+}
+
+header {
+    background-color: rgb(108, 108, 255);
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(107, 107, 255);
+    text-align: center;
+}
+
 body {
     background-color: rgb(142, 142, 255);
 }
@@ -10,7 +25,6 @@ body {
     background-color: rgb(77, 77, 192);
     border: solid 1px black;
     margin: auto;
-    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -39,4 +53,5 @@ body {
     margin-bottom: 5px;
     width: 90%;
     padding: 5px;
+    border-radius: 5px;
 }
